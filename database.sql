@@ -19,7 +19,7 @@ CREATE TABLE health_data (
 	glu INT,
 	trigs INT,
 	crp INT,
-	nic INT,
+	nic BOOLEAN,
 	vo2 DECIMAL(4,2),
 	waist DECIMAL(3,1)
 );

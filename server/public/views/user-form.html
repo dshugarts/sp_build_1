@@ -3,17 +3,17 @@
     <label>User ID: <input type="number" ng-model="fc.newEntry.user_id" placeholder=1 disabled /></label><br />
     <label>Height (in): <input type="number" ng-model="fc.newData.height" /></label><br />
     <label>Weight (lbs): <input type="number" ng-model="fc.newData.weight" /></label><br />
-    <label>Waist Size (in): <input type="number" ng-model="fc.newEntry.waist" /></label><br />
+    <label>Waist Size (in): <input type="number" ng-model="fc.newData.waist" /></label><br />
     <label>Body Fat Percentage (%): <input type="number" ng-model="fc.newData.pbf" /></label><br />
-    <label>Systolic: <input type="number" ng-model="fc.newEntry.systolic" /></label><br />
-    <label>Diastolic: <input type="number" ng-model="fc.newEntry.diastolic" /></label><br />
-    <label>Total Cholesterol (TC): <input type="number" ng-model="fc.newEntry.tc" /></label><br />
-    <label>HDL: <input type="number" ng-model="fc.newEntry.hdl" /></label><br />
-    <label>LDL: <input type="number" ng-model="fc.newEntry.ldl" /></label><br />
-    <label>Glucose: <input type="number" ng-model="fc.newEntry.glu" /></label><br />
-    <label>Triglycerides: <input type="number" ng-model="fc.newEntry.trigs" /></label><br />
-    <label>C-Reactive Protein: <input type="number" ng-model="fc.newEntry.crp" /></label><br />
-    <label>Nicotine User: <input type="radio" ng-model="fc.newEntry.nicotine" value="yes" />Yes</label><input type="radio" ng-model="fc.newEntry.nicotine" value="no" />No</label><br />
-    <label>VO2 Max: <input type="number" ng-model="fc.newEntry.vo2" /></label><br />
-    <button ng-model="submitFormBtn">Submit Data!</button>
+    <label>Systolic: <input type="number" ng-model="fc.newData.systolic" /></label><br />
+    <label>Diastolic: <input type="number" ng-model="fc.newData.diastolic" /></label><br />
+    <label>Total Cholesterol (TC): <input type="number" ng-model="fc.newData.tc" /></label><br />
+    <label>HDL: <input type="number" ng-model="fc.newData.hdl" /></label><br />
+    <label>LDL: <input type="number" ng-model="fc.newData.ldl" /></label><br />
+    <label>Glucose: <input type="number" ng-model="fc.newData.glu" /></label><br />
+    <label>Triglycerides: <input type="number" ng-model="fc.newData.trigs" /></label><br />
+    <label>C-Reactive Protein: <input type="number" ng-model="fc.newData.crp" /></label><br />
+    <label>Nicotine User: <input type="radio" ng-model="fc.newData.nicotine" value = true />Yes</label><input type="radio" ng-model="fc.newEntry.nicotine" value = false />No</label><br />
+    <label>VO2 Max: <input type="number" ng-model="fc.newData.vo2" /></label><br />
+    <button ng-model="submitFormBtn" ng-click="fc.createData(newData)">Submit Data!</button>
 </form>
